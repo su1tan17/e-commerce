@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <!--! Boostrap Icons CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!--! header start  -->
+    <header>
+      <div class="global-notification">
+        <div class="container">
+          <p>
+            MONT VE KABANLARDA 30% A VARAN YILBAŞI İNDİRİMLERİ DEVAM EDİYOR!
+            
+            <a href="shop.html">Alışverişe Başla</a>
+          </p>
+        </div>
+      </div>
+      <div class="header-row">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-mobile">
+              <i class="bi bi-list" id="btn-menu"></i>
+            </div>
+            <div class="header-left">
+              <a href="index.html" class="logo">HepsiŞurada</a>
+            </div>
+            <div class="header-center" id="sidebar">
+              <nav class="navigation">
+                <ul class="menu-list">
+                  <li class="menu-list-item">
+                    <a href="index.html" class="menu-link">
+                      Anasayfa
+                    </a>
+                  </li>
+                  <li class="menu-list-item megamenu-wrapper">
+                     <a href="shop.html" class="menu-link">
+                       Kategoriler
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div class="menu-dropdown-wrapper">
+                      <div class="menu-dropdown-megamenu">
+                        <div class="megamenu-links">
+                          <div class="megamenu-products">
+                            <h3 class="megamenu-products-title">KADIN</h3>
+                            <ul class="megamenu-menu-list">
+                              <li>
+                                <a href="#">Elbise-Etek</a>
+                              </li>
+                              <li>
+                                <a href="#">Sweatshirt</a>
+                              </li>
+                              <li>
+                                <a href="#">Kazak</a>
+                              </li>
+                              <li>
+                                <a href="#">Gömlek-Bluz</a>
+                              </li>
+                              <li>
+                                <a href="#">Mont-Kaban</a>
+                              </li>
+                              <li>
+                                <a href="#">Jeans-Pantolon</a>
+                              </li>
+                              <li>
+                                <a href="#">Ev Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">Spor Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">İç Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">Ayakkabı</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="megamenu-products">
+                            <h3 class="megamenu-products-title">
+                              ERKEK
+                            </h3>
+                            <ul class="megamenu-menu-list">
+                              <li>
+                                <a href="#">Sweatshirt</a>
+                              </li>
+                              <li>
+                                <a href="#">Kazak</a>
+                              </li>
+                              <li>
+                                <a href="#">Mont-Kaban</a>
+                              </li>
+                              <li>
+                                <a href="#">Gömlek</a>
+                              </li>
+                              <li>
+                                <a href="#">Jens-Pantolon</a>
+                              </li>
+                              <li>
+                                <a href="#">Eşofman</a>
+                              </li>
+                              <li>
+                                <a href="#">Ev Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">İç Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">Ayakkabı</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="megamenu-products">
+                            <h3 class="megamenu-products-title">ÇOCUK</h3>
+                            <ul class="megamenu-menu-list">
+                              <li>
+                                <a href="#">Alt-Üst Takım</a>
+                              </li>
+                              <li>
+                                <a href="#">Tulum</a>
+                              </li>
+                              <li>
+                                <a href="#">T-shirt</a>
+                              </li>
+                              <li>
+                                <a href="#">Kazak</a>
+                              </li>
+                              <li>
+                                <a href="#">Elbise-Etek</a>
+                              </li>
+                              <li>
+                                <a href="#">Sweatshirt</a>
+                              </li>
+                              <li>
+                                <a href="#">Pantolon-Şort</a>
+                              </li>
+                              <li>
+                                <a href="#">Çorap</a>
+                              </li>
+                              <li>
+                                <a href="#">Ayakkabı</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="megamenu-single">
+                          <a href="#">
+                            <img src="img/mega-menu.jpg" alt="" />
+                          </a>
+                          <h3 class="megamenu-single-title">
+                            YENİLENEN ÜRÜNLERLE!
+                          </h3>
+                          <h4 class="megamenu-single-subtitle">
+                            Fırsatları Kaçırma
+                          </h4>
+                          <a href="#" class="megamenu-single-button btn btn-sm"
+                            >Alışverişe Başla</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <li class="menu-list-item">
+                    <a href="contact.html" class="menu-link"> İletişim </a>
+                  </li>
+                </ul>
+              </nav>
+              <i class="bi-x-circle" id="close-sidebar"></i>
+            </div>
+            <div class="header-right">
+              <div class="header-right-links">
+                <a href="account.html" class="header-account">
+                  <i class="bi bi-person"></i>
+                </a>
+                <button class="search-button">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="#">
+                  <i class="bi bi-heart"></i>
+                </a>
+                <div class="header-cart">
+                  <a href="cart.html" class="header-cart-link">
+                    <i class="bi bi-bag"></i>
+                    <span class="header-cart-count">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--! header end  -->
+
+    <!--! modal search start  -->
+    <div class="modal-search">
+      <div class="modal-wrapper">
+        <h3 class="modal-title">Ürün Ara</h3>
+        <p class="modal-text">
+          Aradığınız ürünleri görmek için yazmaya başlayın.
+        </p>
+        <form class="search-form">
+          <input type="text" placeholder="Aramak istediğiniz ürünü giriniz." />
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+        <div class="search-results">
+          <div class="search-heading">
+            <h3>Arama Sonuçları</h3>
+          </div>
+          <div class="results">
+            <a href="#" class="result-item">
+              <img
+                src="img/products/product1/kazakön.jpg"
+                class="search-thumb"
+                alt=""
+              />
+              <div class="search-info">
+                <h4>Analogue Resin Strap</h4>
+                <span class="search-sku">SKU: PD0016</span>
+                <span class="search-price">300.30 TL</span>
+              </div>
+            </a>
+            <a href="#" class="result-item">
+              <img
+                src="img/products/product2/gömlekön.jpg"
+                class="search-thumb"
+                alt=""
+              />
+              <div class="search-info">
+                <h4>Analogue Resin Strap</h4>
+                <span class="search-sku">SKU: PD0016</span>
+                <span class="search-price">108.00 TL</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <i class="bi bi-x-circle" id="close-search"></i>
+      </div>
+    </div>
+    <!--! modal search end  -->>
+
+    <!--! cart start -->
+    <section class="cart-page">
+      <div class="container">
+        <div class="cart-page-wrapper">
+          <form class="cart-form">
+            <div class="free-progress-bar">
+              <p class="progress-bar-title">
+                Sepete <strong>161.00 TL</strong> ekle ve ücretsiz kargodan yararlan!
+              </p>
+              <div class="progress-bar">
+                <span class="progress"></span>
+              </div>
+            </div>
+            <div class="shop-table-wrapper">
+              <table class="shop-table">
+                <thead>
+                  <th class="product-thumbnail">&nbsp;</th>
+                  <th class="product-thumbnail">&nbsp;</th>
+                  <th class="product-name">Ürün</th>
+                  <th class="product-price">Fiyat</th>
+                  <th class="producy-size">Beden</th>
+                  <th class="product-colour">Renk</th>
+                  <th class="product-quantity">Adet</th>
+                  <th class="product-subtotal">Ara Toplam</th>
+                </thead>
+                <tbody class="cart-wrapper"></tbody>
+              </table>
+              <div class="actions-wrapper">
+                <div class="coupon">
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Kupon Kodu"
+                  />
+                  <button class="btn">Kupon Ekle</button>
+                </div>
+                <div class="update-cart">
+                  <button class="btn">Sepeti Güncelle</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="cart-collaterals">
+            <div class="cart-totals">
+              <h2>Sepet Tutarı</h2>
+              <table>
+                <tbody>
+                  <tr class="cart-subtotal">
+                    <th>Ara Toplam</th>
+                    <td>
+                      <span id="subtotal">316.00 TL</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Kargo Ücreti</th>
+                    <td>
+                      <ul>
+                        <li>
+                          <label>
+                            Ertesi Gün Teslimat: 15.00 TL
+                            <input type="checkbox" id="fast-cargo" />
+                          </label>
+                        </li>
+                        <li>
+                          <a href="#">Adres Değiştir</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Toplam</th>
+                    <td>
+                      <strong id="cart-total">316.00 TL</strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="checkout">
+                <button class="btn btn-lg">Onaylamaya Geç</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! cart end -->
+
+    <!--! policy start -->
+    <section class="policy">
+      <div class="container">
+        <ul class="policy-list">
+          <li class="policy-item">
+            <i class="bi bi-truck"></i>
+            <div class="policy-texts">
+              <strong>ÜCRETSİZ TESLİMAT</strong>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-headset"></i>
+            <div class="policy-texts">
+              <strong>7/24 DESTEK</strong>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-arrow-clockwise"></i>
+            <div class="policy-texts">
+              <strong>30 gün içerisinde İADE ve DEĞİŞİM</strong>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-credit-card"></i>
+            <div class="policy-texts">
+              <strong>GÜVENLİ ÖDEME </strong>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--! policy end -->
+
+    <!--! footer start -->
+    <footer class="footer">
+      <div class="Kaydol-row">
+        <div class="container">
+          <div class="footer-row-wrapper">
+            <div class="footer-Kaydol-wrapper">
+              <div class="footer-Kaydol">
+                <div class="footer-Kaydol-top">
+                  <h3 class="Kaydol-title">
+                    İndirim ve kampanyalardan e-mail yoluyla haberdar olabilirsin. 
+                  </h3>
+                </div>
+                <div class="footer-Kaydol-bottom">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Enter your email address."
+                    />
+                    <button class="btn">Kaydol</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="footer-contact-wrapper">
+              <div class="footer-contact-top">
+                <h3 class="contact-title">
+                  HepsiŞurada Destek!<br />
+                  (+90) 123 456 78 90
+                </h3>
+                <p class="contact-desc">7/24 Hizmetinizdeyiz</p>
+              </div>
+              <div class="footer-contact-bottom">
+                <div class="download-app">
+                  <a href="#">
+                    <img src="img/footer/app-store.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/footer/google-play.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widgets-row">
+        <div class="container">
+          <div class="footer-widgets">
+            <div class="brand-info">
+              <div class="footer-logo">
+                <a href="index.html" class="logo">HepsiŞurada</a>
+              </div>
+              <div class="footer-desc">
+                <p>
+                  Bize Ulaşın
+                </p>
+              </div>
+              <div class="footer-contact">
+                <p>
+                  <a href="tel:555 555 55 55">(+800) 1234 5678 90</a> -
+                  <a href="mailto:hepsisurada@gmail.com">hepsisurada@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>HepsiŞurada Destek</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">İletişim Formu</a>
+                </li>
+                <li>
+                  <a href="#">444 4 444</a>
+                </li>
+                <li>
+                  <a href="#">Whatsapp Destek</a>
+                </li>
+                <li>
+                  <a href="#">Görüntülü Destek</a>
+                </li>
+                <li>
+                  <a href="#">Sipariş Takip</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Yardım</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Sıkça Sorulan Sorular</a>
+                </li>
+                <li>
+                  <a href="#">İade ve Değişim</a>
+                </li>
+                <li>
+                  <a href="#">Kullanım Koşulları</a>
+                </li>
+                <li>
+                  <a href="#">Site Haritası</a>
+                </li>
+                <li>
+                  <a href="#">İşlem Rehberi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Kurumsal</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="#">Mağazalarımız</a>
+                </li>
+                <li>
+                  <a href="#">Kurumsal</a>
+                </li>
+                <li>
+                  <a href="#">Kurumsal Destek</a>
+                </li>
+                <li>
+                  <a href="#">Hediye Kart</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Politikalar</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Aydınlatma Metni</a>
+                </li>
+                <li>
+                  <a href="#">Aydınlatma Metni/Pazaryeri</a>
+                </li>
+                <li>
+                  <a href="#">Veri Gizliliği ve Güvenliği Politikası</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-row">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="site-copyright">
+              <p>
+                Telif hakkı 2020-2024  E-ticaret sitesine aittir.  Her hakkı saklıdır. HepsiŞurada AŞ tarafından hazırlanmıştır. 
+              </p>
+            </div>
+            <a href="#">
+              <img src="img/footer/cards.png" alt="" />
+            </a>
+            <div class="footer-menu">
+              <ul class="footer-menu-list">
+                <li class="list-item">
+                  <a href="#">444 4 444</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Terms and Conditions</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Whatsapp Destek</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--! footer end -->
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
+  </body>
+</html>

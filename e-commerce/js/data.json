@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Gri Basic Triko Kazak",
+        "price": {
+            "oldPrice": 385.00,
+            "newPrice": 300.30
+        },
+        "discount": 22,
+        "img": {
+            "singleImage": "img/products/product1/kazakön.jpg",
+            "thumbs": [
+                "img/products/product1/kazakön.jpg",
+                "img/products/product1/kazakarka.jpg"
+                
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Uzun Kollu Kareli Erkek Gömlek",
+        "price": {
+            "oldPrice": 400.00,
+            "newPrice": 268.00
+        },
+        "discount": 33,
+        "img": {
+            "singleImage": "img/products/product2/gömlekön.jpg",
+            "thumbs": [
+                "img/products/product2/gömlekön.jpg",
+                "img/products/product2/gömlekarka.jpg"
+               
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Kapüşonlu Erkek Şişme Mont",
+        "price": {
+            "oldPrice": 1799.99,
+            "newPrice": 1296.00
+        },
+        "discount": 28,
+        "img": {
+            "singleImage": "img/products/product3/montön.jpg",
+            "thumbs": [
+                "img/products/product3/montön.jgp",
+                "img/products/product3/montarka.jpg"
+                
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Kapüşonlu Uzun Kollu Kadın Kaban",
+        "price": {
+            "oldPrice": 3000.00,
+            "newPrice": 2220.00
+        },
+        "discount": 26,
+        "img": {
+            "singleImage": "img/products/product4/kabanön.jpg",
+            "thumbs": [
+                "img/products/product4/kabanön.jpg",
+                "img/products/product4/kabanarka.jpg",
+                "img/products/product4/3.png"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Deri Görünümlü Fermuarlı Kız Çocuk Bot",
+        "price": {
+            "oldPrice": 565.00,
+            "newPrice": 339.00
+        },
+        "discount": 40,
+        "img": {
+            "singleImage": "img/products/product5/botön.jpg",
+            "thumbs": [
+                "img/products/product5/botön.jpg",
+                "img/products/product5/botarka.jpg"
+                
+            ]
+        }
+    }
+]

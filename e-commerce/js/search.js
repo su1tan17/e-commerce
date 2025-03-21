@@ -1,0 +1,87 @@
+function productRoute(){
+    const resultDOM= document.querySelectorAll(".search-results .result-item");
+    resultDOM.forEach(item =>{
+        item.addEventListener("click", ()=>{
+            const id = item.dataset.id;
+            if(id){
+                localStorage.setItem("productId",JSON.stringify(id));
+                window.location.href="single-product.html";
+            }
+        });
+    });
+}
+
+function searchFunc(products) {
+    const searchWrapperDOM=document.querySelector(".search-results .results");
+    let result="";
+    products.forEach(item => {
+        result+=`
+        <a href="#" class="result-item" data-id=${item.id}>
+            <img src=${item.img.singleImage} class="search-thumb" alt="">
+            <div class="search-info">
+              <h4>${item.name}</h4>
+              <span class="search-sku">SKU: PD0016</span>
+              <span class="search-price">${item.price.newPrice.toFixed(2)} TL</span>
+            </div>
+          </a>
+        `;
+    });
+    searchWrapperDOM ?(searchWrapperDOM.innerHTML=result):"";
+    productRoute();
+
+    const inputDOM= document.querySelector(".search-form input");
+    let value="";
+    let filtered=[];
+    inputDOM.addEventListener("input",(e)=>{
+        value=(e.target.value).trim().toLowerCase();
+        filtered = products.filter(item => item.name.trim().toLowerCase().includes(value));
+        let result = "";
+        if (filtered.length > 1) {
+          searchWrapperDOM.style.gridTemplateColumns = "1fr 1fr";
+          filtered.forEach((item) => {
+            result += `
+            <a href="#" class="result-item" data-id=${item.id}>
+                <img src=${item.img.singleImage} class="search-thumb" alt="">
+                <div class="search-info">
+                    <h4>${item.name}</h4>
+                    <span class="search-sku">SKU: PD0016</span>
+                    <span class="search-price">${item.price.newPrice.toFixed(
+                      2
+                    )} TL</span>
+                </div>
+            </a>
+            `;
+          });
+          searchWrapperDOM.innerHTML = result;
+        } else if (filtered.length < 2) {
+          searchWrapperDOM.style.gridTemplateColumns = "1fr";
+          if (filtered == 0) {
+            searchWrapperDOM.innerHTML = `
+            <a href="#" class="result-item" style="justify-content: center">
+            😔Aradığınız Ürün Bulunamadı😔
+            </a>
+            `;
+          } else {
+            filtered.forEach((item) => {
+              result += `
+              <a href="#" class="result-item" data-id=${item.id}>
+                  <img src=${item.img.singleImage} class="search-thumb" alt="">
+                  <div class="search-info">
+                      <h4>${item.name}</h4>
+                      <span class="search-sku">SKU: PD0016</span>
+                      <span class="search-price">${item.price.newPrice.toFixed(
+                        2
+                      )} TL</span>
+                  </div>
+              </a>
+              `;
+            });
+            searchWrapperDOM.innerHTML = result;
+          }
+        }
+    
+        productRoute();
+      });
+}
+
+export default searchFunc;
